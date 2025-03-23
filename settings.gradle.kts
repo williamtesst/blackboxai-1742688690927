@@ -1,11 +1,20 @@
 pluginManagement {
     repositories {
-        gradlePluginPortal()
-        maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
         google()
+        gradlePluginPortal()
+        mavenCentral()
+        maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
     }
 }
 
-rootProject.name = "eos-wallet-kmp"
+dependencyResolutionManagement {
+    repositories {
+        google()
+        mavenCentral()
+        maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
+    }
+}
+
+rootProject.name = "eos-wallet"
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
