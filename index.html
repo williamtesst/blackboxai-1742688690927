@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EOS Wallet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8F8F8;
+        }
+        .card {
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        .info-icon {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(33, 150, 243, 0.1);
+            margin-top: 2px;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-[#F8F8F8]">
+    <div class="container mx-auto px-5 py-6 max-w-xl">
+        <!-- Back button -->
+        <button class="mb-6 w-8 h-8 flex items-center justify-center hover:bg-gray-100 transition-colors rounded-full">
+            <i class="fas fa-arrow-left text-[#1C1B1F] text-lg"></i>
+        </button>
+        
+        <!-- Header -->
+        <h1 class="text-[28px] font-bold text-[#1C1B1F] leading-tight mb-4">
+            Start Your EOS Wallet journey
+        </h1>
+        
+        <p class="text-[16px] text-[#49454F] leading-relaxed mb-6">
+            An EOS account name is your passport to the EOS blockchain, allowing you to send, receive, and manage digital assets securely.
+        </p>
+        
+        <h2 class="text-[22px] font-semibold text-[#1C1B1F] mb-6">
+            So you want create a ?
+        </h2>
+        
+        <div class="space-y-3">
+            <!-- Standard Account Option -->
+            <div class="card bg-white rounded-2xl p-4 shadow-sm border border-gray-100">
+                <div class="flex justify-between items-start">
+                    <div class="flex-1">
+                        <h3 class="text-[17px] font-semibold text-[#1C1B1F] mb-1.5">Standard Account Name</h3>
+                        <p class="text-[14px] text-[#49454F] mb-1.5 leading-relaxed">
+                            A full 12-character name. Ideal for those who prefer traditional identifiers.
+                        </p>
+                        <p class="text-[12px] text-[#49454F] opacity-80">
+                            Example: dson21, hdang2k, vlink9x...
+                        </p>
+                    </div>
+                    <div class="info-icon ml-3">
+                        <i class="fas fa-info text-[#2196F3] text-xs"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Premium Account Option -->
+            <div class="card bg-white rounded-2xl p-4 shadow-sm border border-gray-100">
+                <div class="flex justify-between items-start">
+                    <div class="flex-1">
+                        <h3 class="text-[17px] font-semibold text-[#1C1B1F] mb-1.5">Premium Account Name</h3>
+                        <p class="text-[14px] text-[#49454F] mb-1.5 leading-relaxed">
+                            Under 12 characters with a .man suffix for a perfect personalized touch. Easy to remember and share.
+                        </p>
+                        <p class="text-[12px] text-[#49454F] opacity-80">
+                            Example: dson21, hdang2k, vlink9x...
+                        </p>
+                    </div>
+                    <div class="info-icon ml-3">
+                        <i class="fas fa-info text-[#2196F3] text-xs"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Friend Account Option -->
+            <div class="card bg-white rounded-2xl p-4 shadow-sm border border-gray-100">
+                <div class="flex justify-between items-start">
+                    <div class="flex-1">
+                        <h3 class="text-[17px] font-semibold text-[#1C1B1F] mb-1.5">Create an account for your friend</h3>
+                        <p class="text-[14px] text-[#49454F] mb-1.5 leading-relaxed">
+                            You must import an account first.
+                        </p>
+                        <p class="text-[12px] text-[#49454F] opacity-80">
+                            Example: dson21, hdang2k, vlink9x...
+                        </p>
+                    </div>
+                    <div class="info-icon ml-3">
+                        <i class="fas fa-info text-[#2196F3] text-xs"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Continue Button -->
+        <button class="w-full bg-[#2196F3] text-white font-medium text-[15px] py-3.5 rounded-xl mt-8 hover:bg-[#1E88E5] transition-colors">
+            Continue
+        </button>
+    </div>
+</body>
+</html>
